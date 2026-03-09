@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container" id="quiz-box">
+            <div class="col">
+                <h3 id="question">Loading question...</h3>
+            </div>
+            <div class="col box">
+                <input class="options" type="radio" name="answer" id="option1" value="A">
+                <label for="option1"></label>
+            </div>
+            <div class="col box">
+                <input class="options" type="radio" name="answer" id="option2" value="B">
+                <label for="option2"></label>
+            </div>
+            <div class="col box">
+                <input class="options" type="radio" name="answer" id="option3" value="C">
+                <label for="option3"></label>
+            </div>
+            <div class="col box">
+                <input class="options" type="radio" name="answer" id="option4" value="D">
+                <label for="option4"></label>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+
+        <div id="result" style="display: none; background: white; margin-top: 20px; padding: 10px; border-radius: 5px; width: 100%; max-width: 35rem;"></div>
+        <div id="userResult" style="display: none; background: white; margin-top: 20px; padding: 10px; border-radius: 5px; width: 100%; max-width: 35rem;"></div>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>
